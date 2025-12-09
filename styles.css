@@ -1,0 +1,5 @@
+/* add drop shadow to images */
+.img-shadow {
+  box-shadow: 2px 2px 4px rgba(45, 45, 45, 0.1);
+  border-radius: 4px;
+}
