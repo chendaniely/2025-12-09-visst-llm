@@ -1,6 +1,6 @@
 .PHONY: render
 render:
-	rm -rf _site docs
+	rm -rf ../_site ../docs
 	quarto render index.qmd
 
 .PHONY: preview

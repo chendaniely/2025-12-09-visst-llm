@@ -169,6 +169,13 @@ source .venv/bin/activate
 pip install chatlas python-dotenv openai anthropic
 ```
 
+```bash
+uv init
+source .venv/bin/activate
+uv add chatlas python-dotenv openai anthropic
+```
+
+
 ## Your turn: API key
 
 {{< countdown "2:00" >}}

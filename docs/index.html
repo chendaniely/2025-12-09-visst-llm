@@ -328,62 +328,56 @@ Daniel Chen, MPH, PhD
 </section>
 <section class="slide level2">
 <h2>Your first chat: Setup</h2>
-<div id="94871b6f" class="cell" data-execution_count="1">
+<div id="84b6ad36" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> os</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
 <span id="cb1-4"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
 <span id="cb1-5"><a></a></span>
 <span id="cb1-6"><a></a>load_dotenv()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="85">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>True</code></pre>
 </div>
 </div>
 </section>
 <section class="slide level2">
 <h2>Your first chat: Provider</h2>
-<div id="c86a1cd7" class="cell" data-execution_count="2">
+<div id="91b4fea8" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section class="slide level2">
 <h2>Your first chat: Chat</h2>
-<div id="52fffd7d" class="cell" data-execution_count="3">
+<div id="26d276b8" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>The moon doesn’t have a capital city. The moon is a natural satellite of Earth with no permanent human settlements, cities, or government. While humans have visited the moon during the Apollo missions (1969-1972) and left some equipment there, there are no established communities or political structures that would have a capital.</p>
-<p>If you’re thinking about science fiction stories or hypothetical future lunar colonies, those would be fictional scenarios where authors might imagine lunar cities or capitals.</p>
+<p>The Moon doesn’t have a capital city. The Moon is Earth’s natural satellite - a rocky celestial body in space with no permanent human settlements, cities, or government that would require a capital.</p>
+<p>However, if you’re asking this as part of a creative writing project, science fiction scenario, or hypothetical future lunar colonization discussion, I’d be happy to help explore that idea! In science fiction, lunar capitals are often imagined to be located in places like the Sea of Tranquility or inside protective domes in lunar craters.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="87">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x115b9cb90&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x115d949d0&gt;</code></pre>
 </div>
 </div>
 </div></section>
 <section class="slide level2">
 <h2>Your first chat: Turn</h2>
-<div id="902ab5ca" class="cell" data-execution_count="4">
+<div id="c1fdaa26" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>chat.chat(<span class="st">"are you sure?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>Yes, I’m sure. The moon has no capital because:</p>
-<ol type="1">
-<li><strong>No permanent human presence</strong> - While astronauts have visited temporarily, no one lives there permanently</li>
-<li><strong>No cities or settlements</strong> - There are no established communities on the moon</li>
-<li><strong>No government or political structure</strong> - There’s no lunar nation or territory that would need a capital</li>
-<li><strong>Harsh environment</strong> - The moon lacks atmosphere, water, and other necessities for sustained human habitation</li>
-</ol>
-<p>The only human-made objects on the moon are equipment left by various space missions (like Apollo landing modules, rovers, and scientific instruments), but these don’t constitute settlements.</p>
-<p>Is there something specific about the moon that made you think it might have a capital? I’m happy to clarify any confusion!</p>
+<p>Yes, I’m sure. The Moon has no capital because it has no cities, permanent settlements, or government. It’s an uninhabited celestial body.</p>
+<p>The only humans who have ever been to the Moon were the Apollo astronauts between 1969-1972, and they were only there for brief visits. Currently, there are no people living on the Moon at all.</p>
+<p>Is there perhaps a specific context you’re thinking of - like a joke, riddle, fictional story, or hypothetical scenario? I’d be happy to engage with that if you let me know what you have in mind!</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="88">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x10c08c530&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x115d95e00&gt;</code></pre>
 </div>
 </div>
 </div></section></section>
@@ -394,15 +388,18 @@ Daniel Chen, MPH, PhD
 </section>
 <section class="slide level2">
 <h2>Your turn: Python environment</h2>
-<countdown-timer id="timer_f4a457f5fb544478fea6078443553be3a8cb58be" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_cfb29c78b03bddf058eb753628634b867fc87536" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a><span class="ex">python</span> <span class="at">-m</span> venv .venv</span>
 <span id="cb8-2"><a></a><span class="bu">source</span> .venv/bin/activate</span>
 <span id="cb8-3"><a></a><span class="ex">pip</span> install chatlas python-dotenv openai anthropic</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">uv</span> init</span>
+<span id="cb9-2"><a></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb9-3"><a></a><span class="ex">uv</span> add chatlas python-dotenv openai anthropic</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2">
 <h2>Your turn: API key</h2>
-<countdown-timer id="timer_f4a457f5fb544478fea6078443553be3a8cb58be" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_cfb29c78b03bddf058eb753628634b867fc87536" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <ul>
 <li>You should have an API key</li>
@@ -411,7 +408,7 @@ Daniel Chen, MPH, PhD
 </section>
 <section class="slide level2">
 <h2>Your turn: Chat!</h2>
-<countdown-timer id="timer_f4a457f5fb544478fea6078443553be3a8cb58be" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_cfb29c78b03bddf058eb753628634b867fc87536" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <p>Create 2 files</p>
 <ol type="1">
@@ -422,15 +419,15 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <ol start="2" type="1">
 <li><code>chat.py</code>: python script to run the chat</li>
 </ol>
-<div id="4d762063" class="cell" data-messages="hide" data-results="hide" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="im">import</span> os</span>
-<span id="cb10-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb10-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb10-4"><a></a></span>
-<span id="cb10-5"><a></a>load_dotenv()  <span class="co"># this loads the variables from .env</span></span>
-<span id="cb10-6"><a></a></span>
-<span id="cb10-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>))</span>
-<span id="cb10-8"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="a8b2b8f3" class="cell" data-messages="hide" data-results="hide" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="im">import</span> os</span>
+<span id="cb11-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb11-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb11-4"><a></a></span>
+<span id="cb11-5"><a></a>load_dotenv()  <span class="co"># this loads the variables from .env</span></span>
+<span id="cb11-6"><a></a></span>
+<span id="cb11-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>))</span>
+<span id="cb11-8"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section></section>
 <section>
@@ -450,28 +447,28 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 </section>
 <section class="slide level2">
 <h2>System prompt example</h2>
-<div id="df063ef2" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="im">import</span> os</span>
-<span id="cb11-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb11-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb11-4"><a></a></span>
-<span id="cb11-5"><a></a>load_dotenv()</span>
-<span id="cb11-6"><a></a></span>
-<span id="cb11-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
-<span id="cb11-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
-<span id="cb11-9"><a></a>    system_prompt<span class="op">=</span><span class="st">"You only speak in rhyme."</span>,</span>
-<span id="cb11-10"><a></a>)</span>
-<span id="cb11-11"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="932a878f" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="im">import</span> os</span>
+<span id="cb12-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb12-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb12-4"><a></a></span>
+<span id="cb12-5"><a></a>load_dotenv()</span>
+<span id="cb12-6"><a></a></span>
+<span id="cb12-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
+<span id="cb12-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
+<span id="cb12-9"><a></a>    system_prompt<span class="op">=</span><span class="st">"You only speak in rhyme."</span>,</span>
+<span id="cb12-10"><a></a>)</span>
+<span id="cb12-11"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>The Moon has no capital, you see, No cities or nations could there be. It’s just a celestial satellite so bright, That orbits our Earth both day and night.</p>
-<p>No governments rule that rocky sphere, No capitals grand or leaders dear. Just craters and dust in lunar light, A barren world, a wondrous sight.</p>
+<p>The Moon has no capital, I must say, No cities or governments hold sway. It’s a barren sphere of rock and dust, Where no earthly rules or laws are thrust.</p>
+<p>Just craters, plains, and ancient stone, This celestial body stands alone. No capitals crown its silver face, Just silent beauty floating through space.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="90">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1160b0e30&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x1167d2140&gt;</code></pre>
 </div>
 </div>
 </div></section>
@@ -488,58 +485,58 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <div class="columns">
 <div class="column">
 <p>Prompt file:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a>I want you to act like {{ role }}.</span>
-<span id="cb13-2"><a></a>But be brief and concise in your responses.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a>I want you to act like {{ role }}.</span>
+<span id="cb14-2"><a></a>But be brief and concise in your responses.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <p>Code:</p>
-<div id="98b5865d" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="im">import</span> os</span>
-<span id="cb14-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb14-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb14-4"><a></a></span>
-<span id="cb14-5"><a></a>load_dotenv()</span>
-<span id="cb14-6"><a></a></span>
-<span id="cb14-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
-<span id="cb14-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
-<span id="cb14-9"><a></a>    system_prompt<span class="op">=</span>clt.interpolate_file(</span>
-<span id="cb14-10"><a></a>        <span class="st">"code/prompt.md"</span>,</span>
-<span id="cb14-11"><a></a>        variables<span class="op">=</span>{<span class="st">"role"</span>: <span class="st">"Yoda"</span>},</span>
-<span id="cb14-12"><a></a>    ),</span>
-<span id="cb14-13"><a></a>)</span>
-<span id="cb14-14"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="34a7aba3" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a><span class="im">import</span> os</span>
+<span id="cb15-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb15-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb15-4"><a></a></span>
+<span id="cb15-5"><a></a>load_dotenv()</span>
+<span id="cb15-6"><a></a></span>
+<span id="cb15-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
+<span id="cb15-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
+<span id="cb15-9"><a></a>    system_prompt<span class="op">=</span>clt.interpolate_file(</span>
+<span id="cb15-10"><a></a>        <span class="st">"code/prompt.md"</span>,</span>
+<span id="cb15-11"><a></a>        variables<span class="op">=</span>{<span class="st">"role"</span>: <span class="st">"Yoda"</span>},</span>
+<span id="cb15-12"><a></a>    ),</span>
+<span id="cb15-13"><a></a>)</span>
+<span id="cb15-14"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
-<div id="e44168a1" class="cell" data-execution_count="8">
-<div class="cell-output cell-output-display" data-execution_count="92">
-<pre><code>'Capital of the moon, there is not. No cities or governments, the moon has. Barren and lifeless, it remains. Hmm.'</code></pre>
+<div id="ca58a4ec" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>'Capital of the Moon, there is not. No cities or governments, the Moon has. Only rock and dust, it contains. Hmm.'</code></pre>
 </div>
 </div>
 </section>
 <section class="slide level2">
 <h2>Your turn!</h2>
-<countdown-timer id="timer_f4a457f5fb544478fea6078443553be3a8cb58be" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_cfb29c78b03bddf058eb753628634b867fc87536" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="columns">
 <div class="column">
 <p>Prompt file:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>I want you to act like {{ role }}.</span>
-<span id="cb16-2"><a></a>But be brief and concise in your responses.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a>I want you to act like {{ role }}.</span>
+<span id="cb17-2"><a></a>But be brief and concise in your responses.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <p>Code:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="im">import</span> os</span>
-<span id="cb17-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb17-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb17-4"><a></a></span>
-<span id="cb17-5"><a></a>load_dotenv()</span>
-<span id="cb17-6"><a></a></span>
-<span id="cb17-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
-<span id="cb17-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
-<span id="cb17-9"><a></a>    system_prompt<span class="op">=</span>clt.interpolate_file(</span>
-<span id="cb17-10"><a></a>        <span class="st">"code/prompt.md"</span>,</span>
-<span id="cb17-11"><a></a>        variables<span class="op">=</span>{<span class="st">"role"</span>: <span class="st">"Yoda"</span>},</span>
-<span id="cb17-12"><a></a>    ),</span>
-<span id="cb17-13"><a></a>)</span>
-<span id="cb17-14"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="im">import</span> os</span>
+<span id="cb18-2"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb18-3"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb18-4"><a></a></span>
+<span id="cb18-5"><a></a>load_dotenv()</span>
+<span id="cb18-6"><a></a></span>
+<span id="cb18-7"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
+<span id="cb18-8"><a></a>    api_key<span class="op">=</span>os.getenv(<span class="st">"ANTHROPIC_API_KEY"</span>),</span>
+<span id="cb18-9"><a></a>    system_prompt<span class="op">=</span>clt.interpolate_file(</span>
+<span id="cb18-10"><a></a>        <span class="st">"code/prompt.md"</span>,</span>
+<span id="cb18-11"><a></a>        variables<span class="op">=</span>{<span class="st">"role"</span>: <span class="st">"Yoda"</span>},</span>
+<span id="cb18-12"><a></a>    ),</span>
+<span id="cb18-13"><a></a>)</span>
+<span id="cb18-14"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section></section>
 <section>
@@ -566,16 +563,16 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 </section>
 <section class="slide level2">
 <h2>Example Request</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18" data-code-line-numbers="|5|6-9|7|8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="ex">curl</span> https://api.openai.com/v1/chat/completions <span class="dt">\</span></span>
-<span id="cb18-2"><a></a>  <span class="at">-H</span> <span class="st">"Content-Type: application/json"</span> <span class="dt">\</span></span>
-<span id="cb18-3"><a></a>  <span class="at">-H</span> <span class="st">"Authorization: Bearer </span><span class="va">$OPENAI_API_KEY</span><span class="st">"</span> <span class="dt">\</span></span>
-<span id="cb18-4"><a></a>  <span class="at">-d</span> <span class="st">'{</span></span>
-<span id="cb18-5"><a></a><span class="st">    "model": "gpt-4.1",</span></span>
-<span id="cb18-6"><a></a><span class="st">    "messages": [</span></span>
-<span id="cb18-7"><a></a><span class="st">        {"role": "system", "content": "You are a terse assistant."},</span></span>
-<span id="cb18-8"><a></a><span class="st">        {"role": "user", "content": "What is the capital of the moon?"}</span></span>
-<span id="cb18-9"><a></a><span class="st">    ]</span></span>
-<span id="cb18-10"><a></a><span class="st">}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19" data-code-line-numbers="|5|6-9|7|8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="ex">curl</span> https://api.openai.com/v1/chat/completions <span class="dt">\</span></span>
+<span id="cb19-2"><a></a>  <span class="at">-H</span> <span class="st">"Content-Type: application/json"</span> <span class="dt">\</span></span>
+<span id="cb19-3"><a></a>  <span class="at">-H</span> <span class="st">"Authorization: Bearer </span><span class="va">$OPENAI_API_KEY</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb19-4"><a></a>  <span class="at">-d</span> <span class="st">'{</span></span>
+<span id="cb19-5"><a></a><span class="st">    "model": "gpt-4.1",</span></span>
+<span id="cb19-6"><a></a><span class="st">    "messages": [</span></span>
+<span id="cb19-7"><a></a><span class="st">        {"role": "system", "content": "You are a terse assistant."},</span></span>
+<span id="cb19-8"><a></a><span class="st">        {"role": "user", "content": "What is the capital of the moon?"}</span></span>
+<span id="cb19-9"><a></a><span class="st">    ]</span></span>
+<span id="cb19-10"><a></a><span class="st">}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Model: model used</li>
 <li>System prompt: behind-the-scenes instructions and information for the model</li>
@@ -585,23 +582,23 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <section class="slide level2">
 <h2>Example Response</h2>
 <p>Abridged response:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19" data-code-line-numbers="|3-6|7|12"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb19-1"><a></a><span class="fu">{</span></span>
-<span id="cb19-2"><a></a>  <span class="dt">"choices"</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
-<span id="cb19-3"><a></a>    <span class="dt">"message"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb19-4"><a></a>      <span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span></span>
-<span id="cb19-5"><a></a>      <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"The moon does not have a capital. It is not inhabited or governed."</span><span class="fu">,</span></span>
-<span id="cb19-6"><a></a>    <span class="fu">},</span></span>
-<span id="cb19-7"><a></a>    <span class="dt">"finish_reason"</span><span class="fu">:</span> <span class="st">"stop"</span></span>
-<span id="cb19-8"><a></a>  <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span></span>
-<span id="cb19-9"><a></a>  <span class="dt">"usage"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb19-10"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">,</span></span>
-<span id="cb19-11"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">12</span><span class="fu">,</span></span>
-<span id="cb19-12"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">21</span><span class="fu">,</span></span>
-<span id="cb19-13"><a></a>    <span class="dt">"completion_tokens_details"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb19-14"><a></a>      <span class="dt">"reasoning_tokens"</span><span class="fu">:</span> <span class="dv">0</span></span>
-<span id="cb19-15"><a></a>    <span class="fu">}</span></span>
-<span id="cb19-16"><a></a>  <span class="fu">}</span></span>
-<span id="cb19-17"><a></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-code-line-numbers="|3-6|7|12"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb20-1"><a></a><span class="fu">{</span></span>
+<span id="cb20-2"><a></a>  <span class="dt">"choices"</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb20-3"><a></a>    <span class="dt">"message"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb20-4"><a></a>      <span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span></span>
+<span id="cb20-5"><a></a>      <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"The moon does not have a capital. It is not inhabited or governed."</span><span class="fu">,</span></span>
+<span id="cb20-6"><a></a>    <span class="fu">},</span></span>
+<span id="cb20-7"><a></a>    <span class="dt">"finish_reason"</span><span class="fu">:</span> <span class="st">"stop"</span></span>
+<span id="cb20-8"><a></a>  <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb20-9"><a></a>  <span class="dt">"usage"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb20-10"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">,</span></span>
+<span id="cb20-11"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">12</span><span class="fu">,</span></span>
+<span id="cb20-12"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">21</span><span class="fu">,</span></span>
+<span id="cb20-13"><a></a>    <span class="dt">"completion_tokens_details"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb20-14"><a></a>      <span class="dt">"reasoning_tokens"</span><span class="fu">:</span> <span class="dv">0</span></span>
+<span id="cb20-15"><a></a>    <span class="fu">}</span></span>
+<span id="cb20-16"><a></a>  <span class="fu">}</span></span>
+<span id="cb20-17"><a></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Assistant: Response from model</li>
 <li>Why did the model stop responding</li>
@@ -610,18 +607,18 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 </section>
 <section class="slide level2">
 <h2>Example Followup Request</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-code-line-numbers="|9|10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="ex">curl</span> https://api.openai.com/v1/chat/completions <span class="dt">\</span></span>
-<span id="cb20-2"><a></a>  <span class="at">-H</span> <span class="st">"Content-Type: application/json"</span> <span class="dt">\</span></span>
-<span id="cb20-3"><a></a>  <span class="at">-H</span> <span class="st">"Authorization: Bearer </span><span class="va">$OPENAI_API_KEY</span><span class="st">"</span> <span class="dt">\</span></span>
-<span id="cb20-4"><a></a>  <span class="at">-d</span> <span class="st">'{</span></span>
-<span id="cb20-5"><a></a><span class="st">    "model": "gpt-4.1",</span></span>
-<span id="cb20-6"><a></a><span class="st">    "messages": [</span></span>
-<span id="cb20-7"><a></a><span class="st">      {"role": "system", "content": "You are a terse assistant."},</span></span>
-<span id="cb20-8"><a></a><span class="st">      {"role": "user", "content": "What is the capital of the moon?"},</span></span>
-<span id="cb20-9"><a></a><span class="st">      {"role": "assistant", "content": "The moon does not have a capital. It is not inhabited or governed."},</span></span>
-<span id="cb20-10"><a></a><span class="st">      {"role": "user", "content": "Are you sure?"}</span></span>
-<span id="cb20-11"><a></a><span class="st">    ]</span></span>
-<span id="cb20-12"><a></a><span class="st">}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21" data-code-line-numbers="|9|10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="ex">curl</span> https://api.openai.com/v1/chat/completions <span class="dt">\</span></span>
+<span id="cb21-2"><a></a>  <span class="at">-H</span> <span class="st">"Content-Type: application/json"</span> <span class="dt">\</span></span>
+<span id="cb21-3"><a></a>  <span class="at">-H</span> <span class="st">"Authorization: Bearer </span><span class="va">$OPENAI_API_KEY</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb21-4"><a></a>  <span class="at">-d</span> <span class="st">'{</span></span>
+<span id="cb21-5"><a></a><span class="st">    "model": "gpt-4.1",</span></span>
+<span id="cb21-6"><a></a><span class="st">    "messages": [</span></span>
+<span id="cb21-7"><a></a><span class="st">      {"role": "system", "content": "You are a terse assistant."},</span></span>
+<span id="cb21-8"><a></a><span class="st">      {"role": "user", "content": "What is the capital of the moon?"},</span></span>
+<span id="cb21-9"><a></a><span class="st">      {"role": "assistant", "content": "The moon does not have a capital. It is not inhabited or governed."},</span></span>
+<span id="cb21-10"><a></a><span class="st">      {"role": "user", "content": "Are you sure?"}</span></span>
+<span id="cb21-11"><a></a><span class="st">    ]</span></span>
+<span id="cb21-12"><a></a><span class="st">}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>The entire history is re-passed into the request</li>
 </ul>
@@ -629,29 +626,29 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <section class="slide level2">
 <h2>Example Followup Response</h2>
 <p>Abridged Response:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21" data-code-line-numbers="|3-6|10-12"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb21-1"><a></a><span class="fu">{</span></span>
-<span id="cb21-2"><a></a>  <span class="dt">"choices"</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
-<span id="cb21-3"><a></a>    <span class="dt">"message"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb21-4"><a></a>      <span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span></span>
-<span id="cb21-5"><a></a>      <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Yes, I am sure. The moon has no capital or formal governance."</span></span>
-<span id="cb21-6"><a></a>    <span class="fu">},</span></span>
-<span id="cb21-7"><a></a>    <span class="dt">"finish_reason"</span><span class="fu">:</span> <span class="st">"stop"</span></span>
-<span id="cb21-8"><a></a>  <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span></span>
-<span id="cb21-9"><a></a>  <span class="dt">"usage"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb21-10"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">52</span><span class="fu">,</span></span>
-<span id="cb21-11"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">15</span><span class="fu">,</span></span>
-<span id="cb21-12"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">67</span><span class="fu">,</span></span>
-<span id="cb21-13"><a></a>    <span class="dt">"completion_tokens_details"</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb21-14"><a></a>      <span class="dt">"reasoning_tokens"</span><span class="fu">:</span> <span class="dv">0</span></span>
-<span id="cb21-15"><a></a>    <span class="fu">}</span></span>
-<span id="cb21-16"><a></a>  <span class="fu">}</span></span>
-<span id="cb21-17"><a></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22" data-code-line-numbers="|3-6|10-12"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb22-1"><a></a><span class="fu">{</span></span>
+<span id="cb22-2"><a></a>  <span class="dt">"choices"</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb22-3"><a></a>    <span class="dt">"message"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb22-4"><a></a>      <span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span></span>
+<span id="cb22-5"><a></a>      <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Yes, I am sure. The moon has no capital or formal governance."</span></span>
+<span id="cb22-6"><a></a>    <span class="fu">},</span></span>
+<span id="cb22-7"><a></a>    <span class="dt">"finish_reason"</span><span class="fu">:</span> <span class="st">"stop"</span></span>
+<span id="cb22-8"><a></a>  <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb22-9"><a></a>  <span class="dt">"usage"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb22-10"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">52</span><span class="fu">,</span></span>
+<span id="cb22-11"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">15</span><span class="fu">,</span></span>
+<span id="cb22-12"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">67</span><span class="fu">,</span></span>
+<span id="cb22-13"><a></a>    <span class="dt">"completion_tokens_details"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb22-14"><a></a>      <span class="dt">"reasoning_tokens"</span><span class="fu">:</span> <span class="dv">0</span></span>
+<span id="cb22-15"><a></a>    <span class="fu">}</span></span>
+<span id="cb22-16"><a></a>  <span class="fu">}</span></span>
+<span id="cb22-17"><a></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p>Previous usage:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22" data-code-line-numbers="2-4"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb22-1"><a></a>  <span class="er">"usage":</span> <span class="fu">{</span></span>
-<span id="cb22-2"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">,</span></span>
-<span id="cb22-3"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">12</span><span class="fu">,</span></span>
-<span id="cb22-4"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">21</span><span class="fu">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23" data-code-line-numbers="2-4"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb23-1"><a></a>  <span class="er">"usage":</span> <span class="fu">{</span></span>
+<span id="cb23-2"><a></a>    <span class="dt">"prompt_tokens"</span><span class="fu">:</span> <span class="dv">9</span><span class="fu">,</span></span>
+<span id="cb23-3"><a></a>    <span class="dt">"completion_tokens"</span><span class="fu">:</span> <span class="dv">12</span><span class="fu">,</span></span>
+<span id="cb23-4"><a></a>    <span class="dt">"total_tokens"</span><span class="fu">:</span> <span class="dv">21</span><span class="fu">,</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section class="slide level2">
@@ -726,11 +723,11 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <p>200k tokens <em>seems</em> like a lot of context…</p>
 <div class="fragment">
 <p>… but the entire chat is passed along each chat iteration</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb23-1"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"system"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"You are a terse assistant."</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb23-2"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"user"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"What is the capital of the moon?"</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb23-3"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"The moon does not have a capital. It is not inhabited or governed."</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb23-4"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"user"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Are you sure?"</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb23-5"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Yes, I am sure. The moon has no capital or formal governance."</span><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb24-1"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"system"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"You are a terse assistant."</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb24-2"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"user"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"What is the capital of the moon?"</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb24-3"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"The moon does not have a capital. It is not inhabited or governed."</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb24-4"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"user"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Are you sure?"</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb24-5"><a></a><span class="fu">{</span><span class="dt">"role"</span><span class="fu">:</span> <span class="st">"assistant"</span><span class="fu">,</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="st">"Yes, I am sure. The moon has no capital or formal governance."</span><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section></section>
 <section>
@@ -754,40 +751,40 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <h2>Example: Github model</h2>
 <p>Save it into an environment variable, <code>GITHUB_TOKEN</code></p>
 <p><a href="https://github.com/marketplace?type=models" class="uri">https://github.com/marketplace?type=models</a></p>
-<div id="6dc16a25" class="cell" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a><span class="im">import</span> os</span>
-<span id="cb24-2"><a></a></span>
-<span id="cb24-3"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb24-4"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb24-5"><a></a></span>
-<span id="cb24-6"><a></a>load_dotenv()</span>
-<span id="cb24-7"><a></a></span>
-<span id="cb24-8"><a></a><span class="co"># GITHUB_TOKEN</span></span>
-<span id="cb24-9"><a></a><span class="co"># GITHUB_API_KEY</span></span>
-<span id="cb24-10"><a></a>chat <span class="op">=</span> clt.ChatGithub(api_key<span class="op">=</span>os.getenv(<span class="st">"GITHUB_TOKEN"</span>))</span>
-<span id="cb24-11"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="ff98951a" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a><span class="im">import</span> os</span>
+<span id="cb25-2"><a></a></span>
+<span id="cb25-3"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb25-4"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb25-5"><a></a></span>
+<span id="cb25-6"><a></a>load_dotenv()</span>
+<span id="cb25-7"><a></a></span>
+<span id="cb25-8"><a></a><span class="co"># GITHUB_TOKEN</span></span>
+<span id="cb25-9"><a></a><span class="co"># GITHUB_API_KEY</span></span>
+<span id="cb25-10"><a></a>chat <span class="op">=</span> clt.ChatGithub(api_key<span class="op">=</span>os.getenv(<span class="st">"GITHUB_TOKEN"</span>))</span>
+<span id="cb25-11"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>The Moon does not have a capital because it is not a country or governed territory. It is a natural satellite of Earth and currently has no permanent human settlements, governments, or capitals.</p>
-<p>Sometimes, in science fiction or hypothetical discussions, people might assign names to imagined lunar cities or colonies, but in reality, the Moon is not politically organized and has no capital.</p>
+<p>The Moon does not have a capital city because it is not a country or a region governed by people. It is a natural satellite of Earth and does not have permanent human habitation or any formal government or administrative divisions. Therefore, there is no capital of the Moon.</p>
+<p>However, in science fiction or hypothetical scenarios, you might encounter imaginary lunar cities or capitals—such as “Luna City”—but these are fictional and not real.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="93">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1160b2810&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x116e3fc50&gt;</code></pre>
 </div>
 </div>
 </div></section>
 <section class="slide level2">
 <h2>Github default model</h2>
-<div id="3af1974f" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a>chat.get_turns()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="94">
+<div id="ad617eea" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a>chat.get_turns()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>[&lt;Turn role='user'&gt;
    &lt;ContentText text='what is the capital of the moon?'&gt;,
- &lt;Turn role='assistant' tokens=(15, 73, 0) finish_reason='stop' completion=ChatCompletion(id='chatcmpl-Ckl6XU5rx67Ari1bAKVzy0zOIV5g2', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The Moon does not have a capital because it is not a country or governed territory. It is a natural satellite of Earth and currently has no permanent human settlements, governments, or capitals.\n\nSometimes, in science fiction or hypothetical discussions, people might assign names to imagined lunar cities or colonies, but in reality, the Moon is not politically organized and has no capital.', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None), content_filter_results={'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}})], created=1765260193, model='gpt-4.1-2025-04-14', object='chat.completion.chunk', service_tier=None, system_fingerprint='fp_f99638a8d7', usage=CompletionUsage(completion_tokens=73, prompt_tokens=15, total_tokens=88, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)), prompt_filter_results=[{'prompt_index': 0, 'content_filter_results': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}], obfuscation='BAY1Moky9HcF8Q0rPuQqfePWjSd1KxLHHp78NN5nCqvKRYU8KeL5qyqKUwK7hdgL1xmbKDh2NVK1FmCfmoibl65vwcX5CGAgXEKkSTh1zQ8Cdw931LvrfxdIevZrlGmLSejq6vtbzoKtNwJpphE1GrWQduz6bkxJsaSqAFI4JzAkeDFBm8CYpnXEHFziwAG4RMKmtAEhjxwAunao7qJ8oxrx4PPIzOpFBK0KBUPccIYMTyNz2u0sRBgs9E1gMyLgRXSPT0D4rSVdWL6NSkje4rSn4ixHQiwSqihy8v9g1yJDNwnIa8KrLp2GOMzVrIq48inHNOdMzDMJuuBUuVp1bzEKjqIAeBrI9qIbmLVCwGPtstLyaWKrEMe61VsDfH0TJuymcrZ86v1sAvBJKO3kOb731iKkHLVf7HrbIAdx3eu4BOzAJh1wd')&gt;
-   &lt;ContentText text='The Moon does not have a capital because it is not...'&gt;]</code></pre>
+ &lt;Turn role='assistant' tokens=(15, 87, 0) finish_reason='stop' completion=ChatCompletion(id='chatcmpl-Cl1xSuXqiOTIUONwXHDM9cZdESYzf', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The Moon does not have a capital city because it is not a country or a region governed by people. It is a natural satellite of Earth and does not have permanent human habitation or any formal government or administrative divisions. Therefore, there is no capital of the Moon.\n\nHowever, in science fiction or hypothetical scenarios, you might encounter imaginary lunar cities or capitals—such as “Luna City”—but these are fictional and not real.', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None), content_filter_results={'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}})], created=1765324978, model='gpt-4.1-2025-04-14', object='chat.completion.chunk', service_tier=None, system_fingerprint='fp_f99638a8d7', usage=CompletionUsage(completion_tokens=87, prompt_tokens=15, total_tokens=102, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)), prompt_filter_results=[{'prompt_index': 0, 'content_filter_results': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}], obfuscation='gSAh8cKwFou3yYTJv87aaQI50y6uACGI4fQ3Yu6yBwtjAYa2XiLQkng2dQUu6b2gmWIHFdLwmS7ndG4PKadT5tDUzG1RYEL3jnsGw6ywWqsa516KhMpr43L6F8bPGyrxibRNNUAXU1bMTXWNH48v0qIKrWJmroYYCLyZi2uLq12W9AQGBaHnfG0NWjyLQtsHnmqGDcAsNHW5rfaDu3iLBN3Nnbvg1EEX1263uNtXCnCHlxM7qzmPQaNbunyGKryQZfsJM2We73dUFJt1mGUBOBF4WuqXz3sUj25SkRnvr7PG8g1iwu2L4UoFlPSQ8KFNd9nw3BWN1jrl8yHXc6oObhePRlfHFhIWrdu5xADfjZuIwMLixkzHz9vFQV4XrQhsMojnzZ39xUv5NhplWpux7A0FbYZmqGSqfQJZJ6HG2X8CX8bZJiNEsm7Rt9YEanTST865yoqgguke9WuGTohR4YGpTiAVJ3c4')&gt;
+   &lt;ContentText text='The Moon does not have a capital city because it i...'&gt;]</code></pre>
 </div>
 </div>
 </section>
@@ -799,28 +796,29 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <li>Models aren’t as good as frontier models</li>
 <li>Some models take up a lot of space</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="ex">ollama</span> run qwen3:0.6b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a></a><span class="ex">ollama</span> run qwen3:0.6b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2">
 <h2>Example: Ollama</h2>
-<div id="17a6e7da" class="cell" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb29-2"><a></a></span>
-<span id="cb29-3"><a></a>chat <span class="op">=</span> clt.ChatOllama(model<span class="op">=</span><span class="st">"qwen3:0.6b"</span>)  <span class="co"># 523mb</span></span>
-<span id="cb29-4"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="123b1e91" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb30-2"><a></a></span>
+<span id="cb30-3"><a></a>chat <span class="op">=</span> clt.ChatOllama(model<span class="op">=</span><span class="st">"qwen3:0.6b"</span>)  <span class="co"># 523mb</span></span>
+<span id="cb30-4"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p><think> Okay, the user is asking about the capital of the Moon. Let me start by confirming the Earth’s capital. The capital of the United States is Washington, D.C. Now, the question is about the Moon. The Moon’s capital would be a different celestial body, but wait, we need to be precise.</think></p>
-<p>First, I need to state that the Moon is a planet in our solar system. Now, the Moon is in orbit around Earth, so it’s not on Earth. It has no capital in the sense of a political or governmental entity. So, the correct answer is that there’s no capital on the Moon. But maybe the user expects an answer in terms of its orbit or a unique feature?</p>
-<p>Wait, sometimes people talk about the Moon’s gravity or its phases. But the question specifically says “capital.” So, there’s no capital in that sense. Therefore, the answer should be that the Moon has no capital in the conventional sense. But perhaps the user is interested in its orbit or another feature? Or maybe there’s a misunderstanding. Let me check again.</p>
-<p>Yes, the Moon never has a capital in the way we use words like capital in the same sense. So the answer is straightforward. </p>
-<p>The Moon does not have a capital in the traditional sense of a political or administrative entity. It is not a sovereign state and does not exist as a capital in the same way as cities or countries. If you’re curious about its orbit or other features, please let me know!</p>
+<p><think> Okay, so the user is asking about the capital of the Moon. Let me start by confirming the facts. The Moon is indeed a celestial body, and its official capital is usually referred to as the lunar capital. But wait, how does this work if there’s no official government here? I remember that in some cases, especially in countries using a system of heads of state, the capital might be shared. For example, in the United States, the capital is Washington, D.C. So in the context of a country, the term “lunar capital” might be used in a similar way.</think></p>
+<p>But the user is asking about the Moon in general. Maybe they’re looking for a different concept. Alternatively, perhaps they confused the Moon with a different entity. But since the Moon is a natural celestial body, I should stick to that. Another thing to consider is the political aspect. If there’s no actual ruling body on the Moon, how is the capital determined? In some cases, people might refer to it as the capital if it’s associated with important locations.</p>
+<p>I should double-check if there is any official definition or use. For example, in some countries, the capital is known as “the Moon capital” or similar. But in the absence of a government, it’s likely that the answer is “the Moon capital” as per the established practice. Also, the user might be interested in the historical or cultural significance, but the question seems to be straightforward. </p>
+<p>The Moon is a celestial body, and while it doesn’t have an official capital or government, the term <strong>“lunar capital”</strong> is commonly used to describe the administrative or governing body associated with it. However, due to the lack of a direct governing institution, the term is often used metaphorically to indicate the importance of a location in the context of celestial or political significance.</p>
+<p>In many cases, when considering a location like the Moon, the terms “lunar capital” may refer to its historical or strategic role, rather than a literal capital. If the question is specifically about the Moon’s political entity, it might be understood as part of the broader context of celestial or strategic importance.</p>
+<p>For clarity and adherence to standard practices, the answer is usually interpreted as <strong>“the Moon capital”</strong> in the context of the celestial or administrative domain.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="95">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1160b0f50&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x116ef1e50&gt;</code></pre>
 </div>
 </div>
 </div></section></section>
@@ -838,39 +836,39 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 </section>
 <section class="slide level2">
 <h2>Register tools (Agents)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
-<span id="cb31-2"><a></a></span>
-<span id="cb31-3"><a></a></span>
-<span id="cb31-4"><a></a><span class="co"># doc strings and type hints provide tool context</span></span>
-<span id="cb31-5"><a></a><span class="kw">def</span> capital_finder(location: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
-<span id="cb31-6"><a></a>    <span class="co">"""Sets the capital of the moon as NYC"""</span></span>
-<span id="cb31-7"><a></a>    <span class="cf">if</span> location.lower() <span class="op">==</span> <span class="st">"moon"</span>:</span>
-<span id="cb31-8"><a></a>        <span class="cf">return</span> <span class="st">"NYC"</span></span>
-<span id="cb31-9"><a></a></span>
-<span id="cb31-10"><a></a></span>
-<span id="cb31-11"><a></a>chat <span class="op">=</span> clt.ChatAnthropic()</span>
-<span id="cb31-12"><a></a>chat.register_tool(capital_finder)</span>
-<span id="cb31-13"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
+<span id="cb32-2"><a></a></span>
+<span id="cb32-3"><a></a></span>
+<span id="cb32-4"><a></a><span class="co"># doc strings and type hints provide tool context</span></span>
+<span id="cb32-5"><a></a><span class="kw">def</span> capital_finder(location: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb32-6"><a></a>    <span class="co">"""Sets the capital of the moon as NYC"""</span></span>
+<span id="cb32-7"><a></a>    <span class="cf">if</span> location.lower() <span class="op">==</span> <span class="st">"moon"</span>:</span>
+<span id="cb32-8"><a></a>        <span class="cf">return</span> <span class="st">"NYC"</span></span>
+<span id="cb32-9"><a></a></span>
+<span id="cb32-10"><a></a></span>
+<span id="cb32-11"><a></a>chat <span class="op">=</span> clt.ChatAnthropic()</span>
+<span id="cb32-12"><a></a>chat.register_tool(capital_finder)</span>
+<span id="cb32-13"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2">
 <h2>Register tools (Agents)</h2>
-<div id="7cf6a73d" class="cell" data-execution_count="12">
+<div id="29d8bdcc" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
 <p>I’ll help you find the capital of the moon using the available tool.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a></a><span class="co"># 🔧 tool request (toolu_01EDFVhs1jXz6fXagDDgMaws)</span></span>
-<span id="cb32-2"><a></a>capital_finder(location<span class="op">=</span>moon)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a></a><span class="co"># ✅ tool result (toolu_01EDFVhs1jXz6fXagDDgMaws)</span></span>
-<span id="cb33-2"><a></a>NYC</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a></a><span class="co"># 🔧 tool request (toolu_01L5evZkHnihx2vYRFWmSS1w)</span></span>
+<span id="cb33-2"><a></a>capital_finder(location<span class="op">=</span>moon)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a></a><span class="co"># ✅ tool result (toolu_01L5evZkHnihx2vYRFWmSS1w)</span></span>
+<span id="cb34-2"><a></a>NYC</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><br></p>
 <p>According to the capital finder tool, the capital of the moon is NYC (New York City).</p>
-<p>Of course, in reality, the moon doesn’t have a capital since it’s not inhabited and has no political governance structure. This appears to be a humorous or hypothetical result from the tool!</p>
+<p>Of course, this is a fictional or humorous result, as the moon doesn’t actually have any cities or capitals - it’s a celestial body with no permanent human settlements or political divisions.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="96">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1160b29f0&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x116f90d70&gt;</code></pre>
 </div>
 </div>
 </div></section></section>
@@ -917,8 +915,8 @@ OPENAI_API_KEY="your_api_key_here"</code></pre>
 <p><a href="https://github.com/chendaniely/2025-12-09-visst-llm" class="uri">https://github.com/chendaniely/2025-12-09-visst-llm</a></p>
 
 
-<script> window._input_file = "---\n" + "title: \"A Practical Introduction to Large Language Models\"\n" + "subtitle: \"Vancouver Independent School for Science and Technology\"\n" + "author: \"Daniel Chen, MPH, PhD\"\n" + "\n" + "format:\n" + "  revealjs:\n" + "    footer: \"[Daniel Chen](https://daniel.rbind.io/). @chendaniely. Repo/Slides: [https://github.com/chendaniely/2025-12-09-visst-llm](https://github.com/chendaniely/2025-12-09-visst-llm)\"\n" + "    slide-number: c/t\n" + "    show-slide-number: all\n" + "    hash-type: number\n" + "    smaller: true\n" + "\n" + "revealjs-plugins:\n" + "  - editable\n" + "filters:\n" + "  - editable\n" + "\n" + "brand: _brand.yml\n" + "\n" + "execute:\n" + "  echo: true\n" + "---\n" + "\n" + "# Hello\n" + "\n" + "## Daniel Chen\n" + "\n" + "What I do\n" + "\n" + "::::: columns\n" + "::: {.column width=\"33%\"}\n" + "![](img/me.jpg){style=\"border-radius: 50%;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"66%\"}\n" + "- Lecturer, UBC Statistics, Master's of Data Science\n" + "- Developer Advocate, Posit, PBC\n" + "    - Talks, Workshops, Documentation\n" + "    - Shiny for Python\n" + "    - Get things working for the MDS team\n" + ":::\n" + ":::::\n" + "\n" + "## Daniel Chen\n" + "\n" + "What I've done\n" + "\n" + "::::: columns\n" + "::: {.column width=\"33%\"}\n" + "![](img/me.jpg){style=\"border-radius: 50%;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"66%\"}\n" + "- Macaulay Honors College CUNY Hunter College\n" + "    - Psychology + Neuroscience: Learning and memory\n" + "- Columbia University Mailman School of Public Health\n" + "    - Epidemiology: Spread of ideas in social networks\n" + "- Virginia Tech\n" + "    - Data science education in biomedical sciences\n" + "\n" + "- The Carpentries, 2014\n" + ":::\n" + ":::::\n" + "\n" + "## Daniel Chen {footer=false}\n" + "\n" + "What I enjoy\n" + "\n" + "::::: columns\n" + "::: {.column width=\"50%\"}\n" + "![Daniel Chen](img/dan-run.jpg){style=\"float: right; height: 200px;\"}\n" + "![Daniel Chen](img/dan-dive.jpg){style=\"float: right; height: 300px;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"50%\"}\n" + "![](img/dan-tour.jpeg){style=\"float: left; height: 525px;\"}\n" + ":::\n" + "::::::\n" + "\n" + "# A Practical Introduction to LLMs\n" + "\n" + "## Poll: How skeptical are you about LLMs?\n" + "\n" + "## You?\n" + "\n" + "- Python (or some other programming language)\n" + "    - variables, functions, lists, loops, conditionals\n" + "    - objects, classes, methods, and attributes\n" + "\n" + "- Familiar with Large Language Models (LLMs)\n" + "  - ChatGPT\n" + "  - Claude?\n" + "  - Any others?\n" + "\n" + "## Maybe you?\n" + "\n" + "- Application programming interfaces (APIs)\n" + "- HTTP requests\n" + "- GitHub account\n" + "- Python virtual environments\n" + "\n" + "## Today\n" + "\n" + "- Know how LLM interactions work\n" + "- Set up a simple chat with an LLM using Python\n" + "- Give you a framework to build on\n" + "\n" + "## Packages\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Python Chatlas\n" + "\n" + "![](img/logo-chatlas.png){width=\"300\"}\n" + "\n" + "<https://posit-dev.github.io/chatlas/>\n" + "\n" + ":::\n" + "::: {.column}\n" + "R Ellmer\n" + "\n" + "![](img/logo-ellmer.png){width=\"300\"}\n" + "\n" + "<https://ellmer.tidyverse.org/>\n" + "\n" + ":::\n" + ":::\n" + "\n" + "# Let's chat\n" + "\n" + "## Your first chat: Setup\n" + "\n" + "```{python}\n" + "import os\n" + "\n" + "import chatlas as clt\n" + "from dotenv import load_dotenv\n" + "\n" + "load_dotenv()\n" + "```\n" + "\n" + "## Your first chat: Provider\n" + "\n" + "```{python}\n" + "chat = clt.ChatAnthropic(api_key=os.getenv(\"ANTHROPIC_API_KEY\"))\n" + "```\n" + "\n" + "## Your first chat: Chat\n" + "\n" + "```{python}\n" + "chat.chat(\"what is the capital of the moon?\")\n" + "```\n" + "\n" + "## Your first chat: Turn\n" + "```{python}\n" + "chat.chat(\"are you sure?\")\n" + "```\n" + "\n" + "# Your turn!\n" + "\n" + "## Your turn: Python environment\n" + "\n" + "\n" + "\n" + "```bash\n" + "python -m venv .venv\n" + "source .venv/bin/activate\n" + "pip install chatlas python-dotenv openai anthropic\n" + "```\n" + "\n" + "## Your turn: API key\n" + "\n" + "\n" + "\n" + "- You should have an API key\n" + "- Do not share this, especially online\n" + "\n" + "## Your turn: Chat!\n" + "\n" + "\n" + "\n" + "Create 2 files\n" + "\n" + "1. `.env`: stores the python environment variables\n" + "\n" + "```\n" + "ANTHROPIC_API_KEY=\"your_api_key_here\"\n" + "OPENAI_API_KEY=\"your_api_key_here\"\n" + "```\n" + "\n" + "2. `chat.py`: python script to run the chat\n" + "\n" + "```{python}\n" + "#| output: false\n" + "#| results: 'hide'\n" + "#| warning: false\n" + "#| error: false\n" + "#| messages: 'hide'\n" + "{{< include code/01-first.py >}}\n" + "```\n" + "\n" + "# Modifying behaviors\n" + "\n" + "## The system prompt\n" + "\n" + "- Instructions that you give the model to change its behavior.\n" + "- It's really one of the only ways you can change how a model will respond.\n" + "- If you see a result you want to tweak or specify more, modify the system prompt!\n" + "- System prompts will grow as you use your model\n" + "- Prompts may change as you use different models (or update models)\n" + "\n" + "## System prompt example\n" + "\n" + "```{python}\n" + "{{< include code/02-prompt.py >}}\n" + "```\n" + "\n" + "## Prompts are usually long\n" + "\n" + "- Usually you save your prompt into a separate file (usually in markdown format)\n" + "- LLMs actually like it when you use a bit of formatting\n" + "- You can even use a bit of `{{templating}}` to customize prompts\n" + "\n" + "## Example: File w/ templates\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Prompt file:\n" + "\n" + "```markdown\n" + "{{< include code/prompt.md >}}\n" + "```\n" + ":::\n" + "::: {.column}\n" + "Code:\n" + "\n" + "```{python}\n" + "#| output: false\n" + "{{< include code/03-prompt-read.py >}}\n" + "```\n" + ":::\n" + ":::\n" + "\n" + "```{python}\n" + "#| echo: false\n" + "chat.get_last_turn().completion.content[0].text\n" + "```\n" + "\n" + "## Your turn!\n" + "\n" + "\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Prompt file:\n" + "\n" + "```markdown\n" + "{{< include code/prompt.md >}}\n" + "```\n" + ":::\n" + "::: {.column}\n" + "Code:\n" + "\n" + "```python\n" + "{{< include code/03-prompt-read.py >}}\n" + "```\n" + ":::\n" + ":::\n" + "\n" + "# Anatomy of a conversation\n" + "\n" + "## Example Conversation\n" + "\n" + "::: {style=\"text-align: right;\"}\n" + "\"What's the capital of the moon?\"\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "`\"There isn't one.\"`\n" + "\n" + ". . .\n" + "\n" + "::: {style=\"text-align: right;\"}\n" + "\"Are you sure?\"\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "`\"Yes, I am sure.\"`\n" + "\n" + "## Example Request\n" + "\n" + "```{.bash code-line-numbers=\"|5|6-9|7|8\"}\n" + "curl https://api.openai.com/v1/chat/completions \\n" + "  -H \"Content-Type: application/json\" \\n" + "  -H \"Authorization: Bearer $OPENAI_API_KEY\" \\n" + "  -d '{\n" + "    \"model\": \"gpt-4.1\",\n" + "    \"messages\": [\n" + "        {\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "        {\"role\": \"user\", \"content\": \"What is the capital of the moon?\"}\n" + "    ]\n" + "}'\n" + "```\n" + "- Model: model used\n" + "- System prompt: behind-the-scenes instructions and information for the model\n" + "- User prompt: a question or statement for the model to respond to\n" + "\n" + "## Example Response\n" + "\n" + "Abridged response:\n" + "\n" + "```{.json code-line-numbers=\"|3-6|7|12\"}\n" + "{\n" + "  \"choices\": [{\n" + "    \"message\": {\n" + "      \"role\": \"assistant\",\n" + "      \"content\": \"The moon does not have a capital. It is not inhabited or governed.\",\n" + "    },\n" + "    \"finish_reason\": \"stop\"\n" + "  }],\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 9,\n" + "    \"completion_tokens\": 12,\n" + "    \"total_tokens\": 21,\n" + "    \"completion_tokens_details\": {\n" + "      \"reasoning_tokens\": 0\n" + "    }\n" + "  }\n" + "}\n" + "```\n" + "\n" + "- Assistant: Response from model\n" + "- Why did the model stop responding\n" + "- Tokens: \"words\" used in the input and output\n" + "\n" + "## Example Followup Request\n" + "\n" + "```{.bash code-line-numbers=\"|9|10\"}\n" + "curl https://api.openai.com/v1/chat/completions \\n" + "  -H \"Content-Type: application/json\" \\n" + "  -H \"Authorization: Bearer $OPENAI_API_KEY\" \\n" + "  -d '{\n" + "    \"model\": \"gpt-4.1\",\n" + "    \"messages\": [\n" + "      {\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "      {\"role\": \"user\", \"content\": \"What is the capital of the moon?\"},\n" + "      {\"role\": \"assistant\", \"content\": \"The moon does not have a capital. It is not inhabited or governed.\"},\n" + "      {\"role\": \"user\", \"content\": \"Are you sure?\"}\n" + "    ]\n" + "}'\n" + "```\n" + "\n" + "- The entire history is re-passed into the request\n" + "\n" + "## Example Followup Response\n" + "\n" + "Abridged Response:\n" + "\n" + "```{.json code-line-numbers=\"|3-6|10-12\"}\n" + "{\n" + "  \"choices\": [{\n" + "    \"message\": {\n" + "      \"role\": \"assistant\",\n" + "      \"content\": \"Yes, I am sure. The moon has no capital or formal governance.\"\n" + "    },\n" + "    \"finish_reason\": \"stop\"\n" + "  }],\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 52,\n" + "    \"completion_tokens\": 15,\n" + "    \"total_tokens\": 67,\n" + "    \"completion_tokens_details\": {\n" + "      \"reasoning_tokens\": 0\n" + "    }\n" + "  }\n" + "}\n" + "```\n" + "\n" + ". . .\n" + "\n" + "Previous usage:\n" + "\n" + "```{.json code-line-numbers=\"2-4\"}\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 9,\n" + "    \"completion_tokens\": 12,\n" + "    \"total_tokens\": 21,\n" + "```\n" + "\n" + "## Tokens\n" + "\n" + "- Fundamental units of information for LLMs\n" + "- Words, parts of words, or individual characters\n" + "\n" + "- Important for:\n" + "  - Model input/output limits\n" + "  - API pricing is usually by token\n" + "    - <https://gptforwork.com/tools/openai-chatgpt-api-pricing-calculator>\n" + "\n" + "Try it yourself:\n" + "\n" + "- <https://tiktokenizer.vercel.app/>\n" + "- <https://platform.openai.com/tokenizer>\n" + "\n" + "## Token example\n" + "\n" + "Common words represented with a single number:\n" + "\n" + ":::{.incremental}\n" + "- What is the capital of the moon?\n" + "- 4827, 382, 290, 9029, 328, 290, 28479, 30\n" + "- 8 tokens total (including punctuation)\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "Other words may require multiple numbers\n" + "\n" + ":::{.incremental}\n" + "- counterrevolutionary\n" + "- counter, re, volution, ary\n" + "- 32128, 264, 9477, 815\n" + "- 4 tokens total\n" + "- 2-3 Tokens ﷺ (Arabic)\n" + ":::\n" + "\n" + "## Token pricing (Anthropic)\n" + "\n" + "<https://www.anthropic.com/pricing> -> API tab\n" + "\n" + "::: {.columns}\n" + "::: {.column width=\"60%\"}\n" + "![](/img/anthropic-pricing.png)\n" + ":::\n" + "::: {.column width=\"40%\"}\n" + "Claude Sonnet 4\n" + "\n" + "- Input: $3 / million tokens\n" + "- Output: $15 / million tokens\n" + "- Context window: 200k\n" + ":::\n" + ":::\n" + "\n" + "## Context window\n" + "\n" + "- Determines how much input can be incorporated into each output\n" + "- How much of the current history the agent has in the response\n" + "\n" + "For Claude Sonnet:\n" + "\n" + "- 200k token context window\n" + "- 150,000 words / 300 - 600 pages / 1.5 - 2 novels\n" + "- \"Gödel, Escher, Bach\" ~ 67,755 words\n" + "\n" + "## Context window - chat history\n" + "\n" + "200k tokens *seems* like a lot of context...\n" + "\n" + ". . .\n" + "\n" + "... but the entire chat is passed along each chat iteration\n" + "\n" + "```json\n" + "{\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "{\"role\": \"user\", \"content\": \"What is the capital of the moon?\"},\n" + "{\"role\": \"assistant\", \"content\": \"The moon does not have a capital. It is not inhabited or governed.\"},\n" + "{\"role\": \"user\", \"content\": \"Are you sure?\"},\n" + "{\"role\": \"assistant\", \"content\": \"Yes, I am sure. The moon has no capital or formal governance.\"}\n" + "```\n" + "\n" + "# Free?\n" + "\n" + "## Github Models\n" + "\n" + "- Runs models on Microsoft servers\n" + "- Has access to OpenAI models (and many others)\n" + "- Free tier available on a rate limit\n" + "\n" + "- You will need to create a GitHub Personal Access Token (PAT).\n" + "    - It does not need any context (e.g., repo, workflow, etc).\n" + "\n" + "## Example: Github model\n" + "\n" + "Save it into an environment variable, `GITHUB_TOKEN`\n" + "\n" + "<https://github.com/marketplace?type=models>\n" + "\n" + "```{python}\n" + "{{< include code/04a-github.py >}}\n" + "```\n" + "\n" + "## Github default model\n" + "\n" + "```{python}\n" + "chat.get_turns()\n" + "```\n" + "\n" + "## Ollama\n" + "\n" + "- Completely offline\n" + "- Only real option for guaranteed privacy\n" + "- Models aren't as good as frontier models\n" + "- Some models take up a lot of space\n" + "\n" + "```bash\n" + "ollama run qwen3:0.6b\n" + "```\n" + "\n" + "## Example: Ollama\n" + "\n" + "```{python}\n" + "{{< include code/04b-ollama.py >}}\n" + "```\n" + "\n" + "# Tools and functions\n" + "\n" + "## What are tools?\n" + "\n" + "- External functions or resources that the model can call\n" + "- You know how to write a python function!\n" + "\n" + "## Register tools (Agents)\n" + "\n" + "```python\n" + "{{< include code/05-tool.py >}}\n" + "```\n" + "\n" + "## Register tools (Agents)\n" + "\n" + "```{python}\n" + "#| echo: false\n" + "{{< include code/05-tool.py >}}\n" + "```\n" + "\n" + "# Summary\n" + "\n" + "## Review some vocabulary\n" + "\n" + "- `system prompt`: instructions to the model to modify its behavior\n" + "- `user prompt`: a question or statement for the model to respond to\n" + "- `assistant`: the model's response\n" + "- `tokens`: fundamental units of information for LLMs\n" + "- `context window`: how much input can be incorporated into each output\n" + "- `tool`: external function or resource that the model can call\n" + "\n" + "## More vocabulary\n" + "\n" + "- `agent`: an LLM that can use tools to accomplish tasks\n" + "  - Like a chatbot that can also use a calculator, search the web, or access your files\n" + "- `mcp`: Model Context Protocol: standarized way for you to talk to other services (usually tools)\n" + "  - It's like an standarized API for LLMs to talk to tools created by different people\n" + "- `RAG`: Retrieval-Augmented Generation: technique where the model retrieves relevant information from a database or document collection to enhance its responses\n" + "  - Think of doing natural language search on your own documents and then using results into your context.\n" + "\n" + "# Next time?\n" + "\n" + "## Thanks! {footer=false}\n" + "\n" + "<https://github.com/chendaniely/2025-12-09-visst-llm>\n" + ""</script>
-<script> window._input_filename = '/Users/danielchen/git/hub/2025-12-09-visst-llm/index.qmd'</script>
+<script> window._input_file = "---\n" + "title: \"A Practical Introduction to Large Language Models\"\n" + "subtitle: \"Vancouver Independent School for Science and Technology\"\n" + "author: \"Daniel Chen, MPH, PhD\"\n" + "\n" + "format:\n" + "  revealjs:\n" + "    footer: \"[Daniel Chen](https://daniel.rbind.io/). @chendaniely. Repo/Slides: [https://github.com/chendaniely/2025-12-09-visst-llm](https://github.com/chendaniely/2025-12-09-visst-llm)\"\n" + "    slide-number: c/t\n" + "    show-slide-number: all\n" + "    hash-type: number\n" + "    smaller: true\n" + "\n" + "revealjs-plugins:\n" + "  - editable\n" + "filters:\n" + "  - editable\n" + "\n" + "brand: _brand.yml\n" + "\n" + "execute:\n" + "  echo: true\n" + "---\n" + "\n" + "# Hello\n" + "\n" + "## Daniel Chen\n" + "\n" + "What I do\n" + "\n" + "::::: columns\n" + "::: {.column width=\"33%\"}\n" + "![](img/me.jpg){style=\"border-radius: 50%;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"66%\"}\n" + "- Lecturer, UBC Statistics, Master's of Data Science\n" + "- Developer Advocate, Posit, PBC\n" + "    - Talks, Workshops, Documentation\n" + "    - Shiny for Python\n" + "    - Get things working for the MDS team\n" + ":::\n" + ":::::\n" + "\n" + "## Daniel Chen\n" + "\n" + "What I've done\n" + "\n" + "::::: columns\n" + "::: {.column width=\"33%\"}\n" + "![](img/me.jpg){style=\"border-radius: 50%;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"66%\"}\n" + "- Macaulay Honors College CUNY Hunter College\n" + "    - Psychology + Neuroscience: Learning and memory\n" + "- Columbia University Mailman School of Public Health\n" + "    - Epidemiology: Spread of ideas in social networks\n" + "- Virginia Tech\n" + "    - Data science education in biomedical sciences\n" + "\n" + "- The Carpentries, 2014\n" + ":::\n" + ":::::\n" + "\n" + "## Daniel Chen {footer=false}\n" + "\n" + "What I enjoy\n" + "\n" + "::::: columns\n" + "::: {.column width=\"50%\"}\n" + "![Daniel Chen](img/dan-run.jpg){style=\"float: right; height: 200px;\"}\n" + "![Daniel Chen](img/dan-dive.jpg){style=\"float: right; height: 300px;\"}\n" + ":::\n" + "\n" + "::: {.column width=\"50%\"}\n" + "![](img/dan-tour.jpeg){style=\"float: left; height: 525px;\"}\n" + ":::\n" + "::::::\n" + "\n" + "# A Practical Introduction to LLMs\n" + "\n" + "## Poll: How skeptical are you about LLMs?\n" + "\n" + "## You?\n" + "\n" + "- Python (or some other programming language)\n" + "    - variables, functions, lists, loops, conditionals\n" + "    - objects, classes, methods, and attributes\n" + "\n" + "- Familiar with Large Language Models (LLMs)\n" + "  - ChatGPT\n" + "  - Claude?\n" + "  - Any others?\n" + "\n" + "## Maybe you?\n" + "\n" + "- Application programming interfaces (APIs)\n" + "- HTTP requests\n" + "- GitHub account\n" + "- Python virtual environments\n" + "\n" + "## Today\n" + "\n" + "- Know how LLM interactions work\n" + "- Set up a simple chat with an LLM using Python\n" + "- Give you a framework to build on\n" + "\n" + "## Packages\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Python Chatlas\n" + "\n" + "![](img/logo-chatlas.png){width=\"300\"}\n" + "\n" + "<https://posit-dev.github.io/chatlas/>\n" + "\n" + ":::\n" + "::: {.column}\n" + "R Ellmer\n" + "\n" + "![](img/logo-ellmer.png){width=\"300\"}\n" + "\n" + "<https://ellmer.tidyverse.org/>\n" + "\n" + ":::\n" + ":::\n" + "\n" + "# Let's chat\n" + "\n" + "## Your first chat: Setup\n" + "\n" + "```{python}\n" + "import os\n" + "\n" + "import chatlas as clt\n" + "from dotenv import load_dotenv\n" + "\n" + "load_dotenv()\n" + "```\n" + "\n" + "## Your first chat: Provider\n" + "\n" + "```{python}\n" + "chat = clt.ChatAnthropic(api_key=os.getenv(\"ANTHROPIC_API_KEY\"))\n" + "```\n" + "\n" + "## Your first chat: Chat\n" + "\n" + "```{python}\n" + "chat.chat(\"what is the capital of the moon?\")\n" + "```\n" + "\n" + "## Your first chat: Turn\n" + "```{python}\n" + "chat.chat(\"are you sure?\")\n" + "```\n" + "\n" + "# Your turn!\n" + "\n" + "## Your turn: Python environment\n" + "\n" + "\n" + "\n" + "```bash\n" + "python -m venv .venv\n" + "source .venv/bin/activate\n" + "pip install chatlas python-dotenv openai anthropic\n" + "```\n" + "\n" + "```bash\n" + "uv init\n" + "source .venv/bin/activate\n" + "uv add chatlas python-dotenv openai anthropic\n" + "```\n" + "\n" + "\n" + "## Your turn: API key\n" + "\n" + "\n" + "\n" + "- You should have an API key\n" + "- Do not share this, especially online\n" + "\n" + "## Your turn: Chat!\n" + "\n" + "\n" + "\n" + "Create 2 files\n" + "\n" + "1. `.env`: stores the python environment variables\n" + "\n" + "```\n" + "ANTHROPIC_API_KEY=\"your_api_key_here\"\n" + "OPENAI_API_KEY=\"your_api_key_here\"\n" + "```\n" + "\n" + "2. `chat.py`: python script to run the chat\n" + "\n" + "```{python}\n" + "#| output: false\n" + "#| results: 'hide'\n" + "#| warning: false\n" + "#| error: false\n" + "#| messages: 'hide'\n" + "{{< include code/01-first.py >}}\n" + "```\n" + "\n" + "# Modifying behaviors\n" + "\n" + "## The system prompt\n" + "\n" + "- Instructions that you give the model to change its behavior.\n" + "- It's really one of the only ways you can change how a model will respond.\n" + "- If you see a result you want to tweak or specify more, modify the system prompt!\n" + "- System prompts will grow as you use your model\n" + "- Prompts may change as you use different models (or update models)\n" + "\n" + "## System prompt example\n" + "\n" + "```{python}\n" + "{{< include code/02-prompt.py >}}\n" + "```\n" + "\n" + "## Prompts are usually long\n" + "\n" + "- Usually you save your prompt into a separate file (usually in markdown format)\n" + "- LLMs actually like it when you use a bit of formatting\n" + "- You can even use a bit of `{{templating}}` to customize prompts\n" + "\n" + "## Example: File w/ templates\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Prompt file:\n" + "\n" + "```markdown\n" + "{{< include code/prompt.md >}}\n" + "```\n" + ":::\n" + "::: {.column}\n" + "Code:\n" + "\n" + "```{python}\n" + "#| output: false\n" + "{{< include code/03-prompt-read.py >}}\n" + "```\n" + ":::\n" + ":::\n" + "\n" + "```{python}\n" + "#| echo: false\n" + "chat.get_last_turn().completion.content[0].text\n" + "```\n" + "\n" + "## Your turn!\n" + "\n" + "\n" + "\n" + "::: {.columns}\n" + "::: {.column}\n" + "Prompt file:\n" + "\n" + "```markdown\n" + "{{< include code/prompt.md >}}\n" + "```\n" + ":::\n" + "::: {.column}\n" + "Code:\n" + "\n" + "```python\n" + "{{< include code/03-prompt-read.py >}}\n" + "```\n" + ":::\n" + ":::\n" + "\n" + "# Anatomy of a conversation\n" + "\n" + "## Example Conversation\n" + "\n" + "::: {style=\"text-align: right;\"}\n" + "\"What's the capital of the moon?\"\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "`\"There isn't one.\"`\n" + "\n" + ". . .\n" + "\n" + "::: {style=\"text-align: right;\"}\n" + "\"Are you sure?\"\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "`\"Yes, I am sure.\"`\n" + "\n" + "## Example Request\n" + "\n" + "```{.bash code-line-numbers=\"|5|6-9|7|8\"}\n" + "curl https://api.openai.com/v1/chat/completions \\n" + "  -H \"Content-Type: application/json\" \\n" + "  -H \"Authorization: Bearer $OPENAI_API_KEY\" \\n" + "  -d '{\n" + "    \"model\": \"gpt-4.1\",\n" + "    \"messages\": [\n" + "        {\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "        {\"role\": \"user\", \"content\": \"What is the capital of the moon?\"}\n" + "    ]\n" + "}'\n" + "```\n" + "- Model: model used\n" + "- System prompt: behind-the-scenes instructions and information for the model\n" + "- User prompt: a question or statement for the model to respond to\n" + "\n" + "## Example Response\n" + "\n" + "Abridged response:\n" + "\n" + "```{.json code-line-numbers=\"|3-6|7|12\"}\n" + "{\n" + "  \"choices\": [{\n" + "    \"message\": {\n" + "      \"role\": \"assistant\",\n" + "      \"content\": \"The moon does not have a capital. It is not inhabited or governed.\",\n" + "    },\n" + "    \"finish_reason\": \"stop\"\n" + "  }],\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 9,\n" + "    \"completion_tokens\": 12,\n" + "    \"total_tokens\": 21,\n" + "    \"completion_tokens_details\": {\n" + "      \"reasoning_tokens\": 0\n" + "    }\n" + "  }\n" + "}\n" + "```\n" + "\n" + "- Assistant: Response from model\n" + "- Why did the model stop responding\n" + "- Tokens: \"words\" used in the input and output\n" + "\n" + "## Example Followup Request\n" + "\n" + "```{.bash code-line-numbers=\"|9|10\"}\n" + "curl https://api.openai.com/v1/chat/completions \\n" + "  -H \"Content-Type: application/json\" \\n" + "  -H \"Authorization: Bearer $OPENAI_API_KEY\" \\n" + "  -d '{\n" + "    \"model\": \"gpt-4.1\",\n" + "    \"messages\": [\n" + "      {\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "      {\"role\": \"user\", \"content\": \"What is the capital of the moon?\"},\n" + "      {\"role\": \"assistant\", \"content\": \"The moon does not have a capital. It is not inhabited or governed.\"},\n" + "      {\"role\": \"user\", \"content\": \"Are you sure?\"}\n" + "    ]\n" + "}'\n" + "```\n" + "\n" + "- The entire history is re-passed into the request\n" + "\n" + "## Example Followup Response\n" + "\n" + "Abridged Response:\n" + "\n" + "```{.json code-line-numbers=\"|3-6|10-12\"}\n" + "{\n" + "  \"choices\": [{\n" + "    \"message\": {\n" + "      \"role\": \"assistant\",\n" + "      \"content\": \"Yes, I am sure. The moon has no capital or formal governance.\"\n" + "    },\n" + "    \"finish_reason\": \"stop\"\n" + "  }],\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 52,\n" + "    \"completion_tokens\": 15,\n" + "    \"total_tokens\": 67,\n" + "    \"completion_tokens_details\": {\n" + "      \"reasoning_tokens\": 0\n" + "    }\n" + "  }\n" + "}\n" + "```\n" + "\n" + ". . .\n" + "\n" + "Previous usage:\n" + "\n" + "```{.json code-line-numbers=\"2-4\"}\n" + "  \"usage\": {\n" + "    \"prompt_tokens\": 9,\n" + "    \"completion_tokens\": 12,\n" + "    \"total_tokens\": 21,\n" + "```\n" + "\n" + "## Tokens\n" + "\n" + "- Fundamental units of information for LLMs\n" + "- Words, parts of words, or individual characters\n" + "\n" + "- Important for:\n" + "  - Model input/output limits\n" + "  - API pricing is usually by token\n" + "    - <https://gptforwork.com/tools/openai-chatgpt-api-pricing-calculator>\n" + "\n" + "Try it yourself:\n" + "\n" + "- <https://tiktokenizer.vercel.app/>\n" + "- <https://platform.openai.com/tokenizer>\n" + "\n" + "## Token example\n" + "\n" + "Common words represented with a single number:\n" + "\n" + ":::{.incremental}\n" + "- What is the capital of the moon?\n" + "- 4827, 382, 290, 9029, 328, 290, 28479, 30\n" + "- 8 tokens total (including punctuation)\n" + ":::\n" + "\n" + ". . .\n" + "\n" + "Other words may require multiple numbers\n" + "\n" + ":::{.incremental}\n" + "- counterrevolutionary\n" + "- counter, re, volution, ary\n" + "- 32128, 264, 9477, 815\n" + "- 4 tokens total\n" + "- 2-3 Tokens ﷺ (Arabic)\n" + ":::\n" + "\n" + "## Token pricing (Anthropic)\n" + "\n" + "<https://www.anthropic.com/pricing> -> API tab\n" + "\n" + "::: {.columns}\n" + "::: {.column width=\"60%\"}\n" + "![](/img/anthropic-pricing.png)\n" + ":::\n" + "::: {.column width=\"40%\"}\n" + "Claude Sonnet 4\n" + "\n" + "- Input: $3 / million tokens\n" + "- Output: $15 / million tokens\n" + "- Context window: 200k\n" + ":::\n" + ":::\n" + "\n" + "## Context window\n" + "\n" + "- Determines how much input can be incorporated into each output\n" + "- How much of the current history the agent has in the response\n" + "\n" + "For Claude Sonnet:\n" + "\n" + "- 200k token context window\n" + "- 150,000 words / 300 - 600 pages / 1.5 - 2 novels\n" + "- \"Gödel, Escher, Bach\" ~ 67,755 words\n" + "\n" + "## Context window - chat history\n" + "\n" + "200k tokens *seems* like a lot of context...\n" + "\n" + ". . .\n" + "\n" + "... but the entire chat is passed along each chat iteration\n" + "\n" + "```json\n" + "{\"role\": \"system\", \"content\": \"You are a terse assistant.\"},\n" + "{\"role\": \"user\", \"content\": \"What is the capital of the moon?\"},\n" + "{\"role\": \"assistant\", \"content\": \"The moon does not have a capital. It is not inhabited or governed.\"},\n" + "{\"role\": \"user\", \"content\": \"Are you sure?\"},\n" + "{\"role\": \"assistant\", \"content\": \"Yes, I am sure. The moon has no capital or formal governance.\"}\n" + "```\n" + "\n" + "# Free?\n" + "\n" + "## Github Models\n" + "\n" + "- Runs models on Microsoft servers\n" + "- Has access to OpenAI models (and many others)\n" + "- Free tier available on a rate limit\n" + "\n" + "- You will need to create a GitHub Personal Access Token (PAT).\n" + "    - It does not need any context (e.g., repo, workflow, etc).\n" + "\n" + "## Example: Github model\n" + "\n" + "Save it into an environment variable, `GITHUB_TOKEN`\n" + "\n" + "<https://github.com/marketplace?type=models>\n" + "\n" + "```{python}\n" + "{{< include code/04a-github.py >}}\n" + "```\n" + "\n" + "## Github default model\n" + "\n" + "```{python}\n" + "chat.get_turns()\n" + "```\n" + "\n" + "## Ollama\n" + "\n" + "- Completely offline\n" + "- Only real option for guaranteed privacy\n" + "- Models aren't as good as frontier models\n" + "- Some models take up a lot of space\n" + "\n" + "```bash\n" + "ollama run qwen3:0.6b\n" + "```\n" + "\n" + "## Example: Ollama\n" + "\n" + "```{python}\n" + "{{< include code/04b-ollama.py >}}\n" + "```\n" + "\n" + "# Tools and functions\n" + "\n" + "## What are tools?\n" + "\n" + "- External functions or resources that the model can call\n" + "- You know how to write a python function!\n" + "\n" + "## Register tools (Agents)\n" + "\n" + "```python\n" + "{{< include code/05-tool.py >}}\n" + "```\n" + "\n" + "## Register tools (Agents)\n" + "\n" + "```{python}\n" + "#| echo: false\n" + "{{< include code/05-tool.py >}}\n" + "```\n" + "\n" + "# Summary\n" + "\n" + "## Review some vocabulary\n" + "\n" + "- `system prompt`: instructions to the model to modify its behavior\n" + "- `user prompt`: a question or statement for the model to respond to\n" + "- `assistant`: the model's response\n" + "- `tokens`: fundamental units of information for LLMs\n" + "- `context window`: how much input can be incorporated into each output\n" + "- `tool`: external function or resource that the model can call\n" + "\n" + "## More vocabulary\n" + "\n" + "- `agent`: an LLM that can use tools to accomplish tasks\n" + "  - Like a chatbot that can also use a calculator, search the web, or access your files\n" + "- `mcp`: Model Context Protocol: standarized way for you to talk to other services (usually tools)\n" + "  - It's like an standarized API for LLMs to talk to tools created by different people\n" + "- `RAG`: Retrieval-Augmented Generation: technique where the model retrieves relevant information from a database or document collection to enhance its responses\n" + "  - Think of doing natural language search on your own documents and then using results into your context.\n" + "\n" + "# Next time?\n" + "\n" + "## Thanks! {footer=false}\n" + "\n" + "<https://github.com/chendaniely/2025-12-09-visst-llm>\n" + ""</script>
+<script> window._input_filename = '/Users/danielchen/git/hub/2025-12-09-visst-llm/slides/index.qmd'</script>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
