@@ -31,4 +31,14 @@ Feel free to change the `clt.ChatAnthropic` to `clt.ChatOpenAI` or other models 
 If you are using [`ChatOllama`](https://posit-dev.github.io/chatlas/reference/ChatOllama.html#chatlas.ChatOllama) or other local models, make sure you have the model downloaded.
 These local Ollama models do not need an API key.
 
+You can download Ollama here: <https://ollama.com/> and find models here: <https://ollama.com/search>.
+Note the download size for these models, some of them are quite big (200GB+).
+
+I small ollama model you can use is [`qwen3:0.6b`](https://ollama.com/library/qwen3).
+You can install it from the ollama app or in the terminal with:
+
+```bash
+ollama run qwen3:0.6b
+```
+
 You can find a list of all the chatlas models here: <https://posit-dev.github.io/chatlas/reference/#chat-model-providers>
