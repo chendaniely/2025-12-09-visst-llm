@@ -1,0 +1,14 @@
+[project]
+name = "2025-12-09-visst-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.75.0",
+    "chatlas>=0.14.0",
+    "ipython>=8.37.0",
+    "jupyterlab>=4.5.0",
+    "openai>=2.9.0",
+    "python-dotenv>=1.2.1",
+]
