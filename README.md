@@ -27,6 +27,8 @@ The code was modified to wait for you to paste in an API key (Anthropic by defau
 and opens the chat console for you with `chat.console()`,
 instead of `chat.chat()`
 
+## Choosing different models
+
 Feel free to change the `clt.ChatAnthropic` to `clt.ChatOpenAI` or other models supported by `chatlas`.
 If you are using [`ChatOllama`](https://posit-dev.github.io/chatlas/reference/ChatOllama.html#chatlas.ChatOllama) or other local models, make sure you have the model downloaded.
 These local Ollama models do not need an API key.
